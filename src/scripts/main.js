@@ -9,6 +9,7 @@ gallery.addEventListener('click', (clickEvent) => {
     : clickEvent.target.closest('a');
 
   if (link !== null) {
+    clickEvent.preventDefault();
     largeImage.src = link.href;
   }
 });
